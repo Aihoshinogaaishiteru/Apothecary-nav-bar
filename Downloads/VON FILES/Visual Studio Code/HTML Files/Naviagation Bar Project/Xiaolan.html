@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Xiaolan</title>
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F3991F;
+}
+html, body {
+    overflow: hidden;
+    height: 100%;
+}@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(10);
+    }
+}
+
+body {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    background-color: #8A6843;
+    padding: 10px 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+li a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-left: 700px;
+}
+
+ul li :hover {
+    transform: scale(1.1);
+    background-color: black;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 0 0 2px blue;
+    transition: 0.3s ease;
+}
+.pfp img{
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.pfp :hover img {
+    transform: scale(1.2);
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1px;
+}
+
+.navdiv li {
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 10px;
+}
+.navdiv ul {
+    margin-left: 840px;
+}
+
+.navdiv a {
+    padding: 10px;
+    margin: -15px;
+}
+
+ul {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    list-style: none;
+}
+
+
+a {
+    color: white;
+}
+
+
+
+.btn :hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
+
+.btn {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero {
+    background-image: url('xiaolan.jpg');
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+</style>
+<body>
+    <nav class="navbar">
+        <div class="pfp"> <a href="Profile Page.html"> <img
+                    src="pfpPic.jpg"></a>
+        </div>
+        <div class="navdiv">
+            <ul>
+                <li><a href="HomeScreen.html"> Home</a></li>
+                <li><a href="#"> Settings</a></li>
+                <li><a href="#"> About</a></li>
+                <li><a href="#"> Contact</a></li>
+                <li><a href="#"> Display</a></li>
+            </ul>
+            <div class="btn">
+                <button>Sign In</button>
+                <button>Log in</button>
+            </div>
+
+        </div>
+    </nav>
+    <div class="hero">
+    </div>
+</body>
+
+</html>
